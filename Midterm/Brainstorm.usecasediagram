@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d2b38d97-2c81-4a47-b41d-b77fed184fcc" name="Brainstorm" linkedPackageId="9ffdbed9-0293-47b2-b193-3822d7dd70bb" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="87825e56-9e34-4af2-a760-c8b36096c069">
+      <elementDefinition Id="c7b8c7d0-b190-44c6-a92c-2d5445f242f4" />
+      <body>Profile
+- Update Profile Picture
+- Update Status
+
+Opinions
+- Post Opinion
+- View Opinions - self &amp; others
+- Comment on Opinion
+- Rate Opinion
+</body>
+    </comment>
+    <comment Id="bbda768e-553a-4b5f-a77c-1b89cba4b291">
+      <elementDefinition Id="8a906faa-58ca-4168-9deb-e485e90198cd" />
+    </comment>
+    <comment Id="8b6bd77f-7fa4-4024-be08-44594ece70f4">
+      <elementDefinition Id="b6105d80-0b2a-42eb-b9b9-5909d5627a4e" />
+      <body>Functional Requirements</body>
+      <annotatedElements>
+        <commentMoniker Id="87825e56-9e34-4af2-a760-c8b36096c069" />
+        <commentMoniker Id="bbda768e-553a-4b5f-a77c-1b89cba4b291" />
+      </annotatedElements>
+    </comment>
+    <comment Id="d631a367-16aa-4555-8653-757e3e3a15f1">
+      <elementDefinition Id="5e34696c-d03b-4a8f-8f82-69e6c00af979" />
+      <body>Constraints
+Web-based application
+Database required to hold opinions
+
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="ca719da5-91e2-43c8-8de8-bd8aa4ee95a7">
+      <profileInstance Id="133b4710-ae9d-4808-8dc0-44d79445d616" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fbcadd0e-7700-4231-9c56-a3fb15831585">
+      <profileInstance Id="29233dc6-4400-4651-8f14-5cea25499c80" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="cdae4bff-81d8-4134-b1e7-7978c482fd03" name="Social Mining" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="b468ba31-c0f0-4d2e-8c80-05df416d3639">
+            <elementDefinition Id="5906b52b-772e-4b97-8a95-470faab47f43" />
+            <body>Opinion Mining for Social Networking Site</body>
+            <annotatedElements>
+              <actorMoniker Id="125c0cd6-a4b9-4297-8448-ab560475620b" LastKnownName="User" />
+              <actorMoniker Id="94112167-cf14-41a5-8720-01778153d9e9" LastKnownName="Admin" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="0041afa9-fde2-4729-a123-669f5aab8211" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="125c0cd6-a4b9-4297-8448-ab560475620b" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fb32d69e-cf54-4d5a-a55d-f6e8a26e7a84" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="94112167-cf14-41a5-8720-01778153d9e9" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4a759f7c-5f91-44ae-a3eb-399e311f16f9" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="9ffdbed9-0293-47b2-b193-3822d7dd70bb" name="Midterm">
+    <elementDefinition Id="f8ba2db5-5af3-464e-b031-5157ce8596a8" />
+  </package>
+</useCaseModelRoot>

@@ -1,8 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="f8ba2db5-5af3-464e-b031-5157ce8596a8"
   name="Midterm" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="c7b8c7d0-b190-44c6-a92c-2d5445f242f4">
+      <body>Profile
+- Update Profile Picture
+- Update Status
+
+Opinions
+- Post Opinion
+- View Opinions - self &amp; others
+- Comment on Opinion
+- Rate Opinion
+</body>
+    </comment>
+    <comment
+      Id="5906b52b-772e-4b97-8a95-470faab47f43">
+      <body>Opinion Mining for Social Networking Site</body>
+      <annotatedElements>
+        <actorMoniker
+          Id="fb32d69e-cf54-4d5a-a55d-f6e8a26e7a84"
+          LastKnownName="User"
+          LastKnownLocation="Midterm.uml" />
+        <actorMoniker
+          Id="4a759f7c-5f91-44ae-a3eb-399e311f16f9"
+          LastKnownName="Admin"
+          LastKnownLocation="Midterm.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="8a906faa-58ca-4168-9deb-e485e90198cd" />
+    <comment
+      Id="b6105d80-0b2a-42eb-b9b9-5909d5627a4e">
+      <body>Functional Requirements</body>
+      <annotatedElements>
+        <commentMoniker
+          Id="c7b8c7d0-b190-44c6-a92c-2d5445f242f4"
+          LastKnownLocation="Midterm.uml" />
+        <commentMoniker
+          Id="8a906faa-58ca-4168-9deb-e485e90198cd"
+          LastKnownLocation="Midterm.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="5e34696c-d03b-4a8f-8f82-69e6c00af979">
+      <body>Constraints
+Web-based application
+Database required to hold opinions
+
+</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -17,28 +68,55 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <subsystem
+        Id="0041afa9-fde2-4729-a123-669f5aab8211"
+        name="Social Mining"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="fb32d69e-cf54-4d5a-a55d-f6e8a26e7a84"
+        name="User"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4a759f7c-5f91-44ae-a3eb-399e311f16f9"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="cc485a68-be91-4081-b033-24ff639e1350"
+        name="Artifact1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>
