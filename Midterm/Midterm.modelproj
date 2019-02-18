@@ -22,6 +22,34 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Activity Diagrams\addtopic.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity Diagrams\addtopic.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity Diagrams\addtopic.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity Diagrams\AdminApproval.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity Diagrams\AdminApproval.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity Diagrams\AdminApproval.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity Diagrams\CommentonTopic.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity Diagrams\CommentonTopic.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity Diagrams\CommentonTopic.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity Diagrams\Topics.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity Diagrams\Topics.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity Diagrams\Topics.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="Activity Diagrams\UpdateStatus.activitydiagram">
       <SubType>Content</SubType>
     </Content>

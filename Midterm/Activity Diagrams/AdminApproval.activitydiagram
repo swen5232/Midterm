@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="67a9e02e-52d8-4a09-98aa-1e9da079f34f" name="AdminApproval" linkedPackageId="d410dd49-be81-4820-bd7a-33d397af8474" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="1a60c8cf-364b-4a2b-aff4-cea9ec54012a" name="AdminApproval" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="608cb8a6-a082-4aa9-b447-0d542e29ab4f" />
+        <nodes>
+          <initialNode Id="63e154e6-b09f-4968-9231-f031c45f75f3" name="Initial1" isLeaf="false">
+            <elementDefinition Id="71064259-4647-47aa-a494-02420783bc7f" />
+            <flowNodeTargets>
+              <controlFlow Id="47d2bc09-3dbb-45ac-b94e-06b58d1ab1f5" isLeaf="false">
+                <opaqueActionMoniker Id="99ea450f-521e-426c-a4bb-e2b5bea08b5f" LastKnownName="Admin Logs in" />
+                <elementDefinition Id="4f35c4f4-2f6b-40b7-aa83-dd883755959a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="99ea450f-521e-426c-a4bb-e2b5bea08b5f" name="Admin Logs in" isLeaf="false">
+            <elementDefinition Id="e8d89b1a-dfd2-4851-977a-1d56a23b08ce" />
+            <flowNodeTargets>
+              <controlFlow Id="65afa9c0-9298-4872-9060-41c7c254f053" isLeaf="false">
+                <opaqueActionMoniker Id="adb98b73-e046-469a-b27f-fbf0d8ec9fe7" LastKnownName="Admin Views Feed" />
+                <elementDefinition Id="5237e08d-33d1-483d-80e6-728c01b9195e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="adb98b73-e046-469a-b27f-fbf0d8ec9fe7" name="Admin Views Feed" isLeaf="false">
+            <elementDefinition Id="7fac5bf9-2dbb-4063-8aa9-2b3d4aebe00a" />
+            <flowNodeTargets>
+              <controlFlow Id="9b6a4f56-002f-4266-8f2e-a6400b63d3d6" isLeaf="false">
+                <opaqueActionMoniker Id="6ad22e30-4aa0-485d-873e-9c52a73db752" LastKnownName="Admin Clicks on Approvals" />
+                <elementDefinition Id="b1d95c7a-742b-4f4e-962e-19ce1f3c5d4c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6ad22e30-4aa0-485d-873e-9c52a73db752" name="Admin Clicks on Approvals" isLeaf="false">
+            <elementDefinition Id="7e5fec41-5b11-4dd3-a75a-2e3233333908" />
+            <flowNodeTargets>
+              <controlFlow Id="f4a51c61-f962-48f3-b8f8-7ba779a080fb" isLeaf="false">
+                <opaqueActionMoniker Id="8cf9b9a0-ca7e-4830-8d91-f83ffb3824d5" LastKnownName="Admin Clicks on Pending" />
+                <elementDefinition Id="946275ec-cd2b-45ee-87ee-59357f8c140d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8cf9b9a0-ca7e-4830-8d91-f83ffb3824d5" name="Admin Clicks on Pending" isLeaf="false">
+            <elementDefinition Id="a8d5e547-aefe-4548-b63c-2c11a11f5101" />
+            <flowNodeTargets>
+              <controlFlow Id="0b550424-94c1-4eeb-9a81-d3b9ebd9b65a" isLeaf="false">
+                <opaqueActionMoniker Id="e0f46e64-c388-498e-9d8f-3dec7ee765f7" LastKnownName="Admin Views Topics Pending" />
+                <elementDefinition Id="dae23352-f8d1-4984-9d0a-f8b3a01b5691" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b0fc8cb0-880b-4609-9cfe-805dc79b97cc" name="Admin Reviews Topic" isLeaf="false">
+            <elementDefinition Id="799e05e6-ed1d-4882-8af1-2a35a720138c" />
+            <flowNodeTargets>
+              <controlFlow Id="2c3b3a9b-e10e-4bff-adf8-94ae89f43f6d" isLeaf="false">
+                <decisionNodeMoniker Id="a869d766-d93c-4abd-8a28-d71245fd6a16" LastKnownName="Decision1" />
+                <elementDefinition Id="866c8fc0-4aaf-4c64-8cce-44ca89357422" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="a869d766-d93c-4abd-8a28-d71245fd6a16" name="Decision1" isLeaf="false">
+            <elementDefinition Id="352eb1d3-6a2b-4182-80ae-f56ee660c4d8" />
+            <flowNodeTargets>
+              <controlFlow Id="1fea79e4-f566-48f9-99f0-7b0eb42b5ef3" isLeaf="false">
+                <callBehaviorActionMoniker Id="7a01df81-8262-4cb4-a851-1d55a51049ea" LastKnownName="Add Post to Database" />
+                <elementDefinition Id="6caeabe0-591e-447d-88ed-63bb8a0c1e83" />
+              </controlFlow>
+              <controlFlow Id="70bf1939-20ee-485a-b639-b7643ed2b7e9" isLeaf="false">
+                <opaqueActionMoniker Id="e0f46e64-c388-498e-9d8f-3dec7ee765f7" LastKnownName="Admin Views Topics Pending" />
+                <elementDefinition Id="5ce188ad-b4c2-4ac5-ac85-307f73f5c1ea" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <callBehaviorAction Id="7a01df81-8262-4cb4-a851-1d55a51049ea" name="Add Post to Database" isLeaf="false">
+            <elementDefinition Id="7c61cd36-9c13-4a54-9222-d2d1357c5918" />
+            <flowNodeTargets>
+              <controlFlow Id="ad3646d1-8e3f-4122-aec2-b6c575517e2c" isLeaf="false">
+                <activityFinalNodeMoniker Id="3fab1e54-35d4-499d-a3b1-04cf8fcc2df7" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="f35092d7-5593-42ea-a2f1-a1dd9e5a32a4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="3fab1e54-35d4-499d-a3b1-04cf8fcc2df7" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="1e346c25-dfac-434b-b52f-8f07171e00d7" />
+          </activityFinalNode>
+          <opaqueAction Id="e0f46e64-c388-498e-9d8f-3dec7ee765f7" name="Admin Views Topics Pending" isLeaf="false">
+            <elementDefinition Id="c00dbdbf-2052-4917-9822-235855dd7845" />
+            <flowNodeTargets>
+              <controlFlow Id="c3438699-4765-4094-b0c6-15254713120f" isLeaf="false">
+                <opaqueActionMoniker Id="b0fc8cb0-880b-4609-9cfe-805dc79b97cc" LastKnownName="Admin Reviews Topic" />
+                <elementDefinition Id="a7329c3b-727d-41f0-950a-4911cd25658d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="d410dd49-be81-4820-bd7a-33d397af8474" name="Midterm">
+    <elementDefinition Id="f8ba2db5-5af3-464e-b031-5157ce8596a8" />
+    <profileInstances>
+      <packageHasProfileInstances Id="beb0ef6b-3c94-4ab8-afda-e311ccaaafd0">
+        <profileInstance Id="cf02ea45-184e-4d90-9415-ade4e2ba1fe9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="909d3040-8c0b-45e7-a302-d751fa4d6d7d">
+        <profileInstance Id="1170a5cf-0379-4cca-9929-92fe2d2e6a81" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
