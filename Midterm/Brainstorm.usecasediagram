@@ -52,7 +52,7 @@ Database required to hold opinions
 A website that mines user's opinions and ranks them based on other's comments</body>
             <annotatedElements>
               <actorMoniker Id="125c0cd6-a4b9-4297-8448-ab560475620b" LastKnownName="User" />
-              <actorMoniker Id="94112167-cf14-41a5-8720-01778153d9e9" LastKnownName="Admin" />
+              <actorMoniker Id="213709fb-eb17-429e-a2bb-ec1d20eda815" LastKnownName="Admin" />
             </annotatedElements>
           </comment>
         </ownedCommentsInternal>
@@ -65,8 +65,8 @@ A website that mines user's opinions and ranks them based on other's comments</b
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <actor Id="94112167-cf14-41a5-8720-01778153d9e9" name="Admin" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="4a759f7c-5f91-44ae-a3eb-399e311f16f9" />
+      <actor Id="213709fb-eb17-429e-a2bb-ec1d20eda815" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0c009160-f5a8-4fed-906b-e6f06231e0f4" />
       </actor>
     </useCaseModelRootHasTypes>
   </packagedElements>

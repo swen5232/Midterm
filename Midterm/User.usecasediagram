@@ -51,85 +51,53 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="614c9e1d-f2fd-4f06-acff-c8a5d9b5c764" />
           </association>
-          <association Id="5a5c1642-714b-4fb1-9453-9e39c00c6370" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Post Topic" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="2b869a88-7839-466e-b72e-86b9fca88745" LastKnownName="Post Topic" />
+          <association Id="cbb44cdf-4921-4f61-a065-08d96b4653c4" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Manage Topics" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1df3f4b1-9ee8-4aee-be84-afe51cded96c" LastKnownName="Manage Topics" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="3dc86725-8848-41f2-8886-21b014f88c17" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="61c7132f-081f-4fe9-b11d-f98e2d002023" />
+                <memberEnd Id="d6ffca24-1827-4bf6-974a-0e85b14cadee" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3096223e-aab9-4e4a-86a3-879a71ca9f6a" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="6b5f4ea9-e603-4224-9604-83be7d7fcef3" name="Post Topic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="fa317d32-fe6a-485c-8c2c-5028a4b355d1" />
+                <memberEnd Id="3a7c0cde-c960-49fb-bbf3-e5825a2b8ac1" name="Manage Topics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="554aba05-425b-4061-8ecc-c872605e6cc2" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="6dadbbfa-216d-40f4-b57d-1238a209dc3f" />
+            <elementDefinition Id="c5c14ba6-a04e-48d4-bbcb-e9025277dc59" />
           </association>
-          <association Id="47989791-501e-4f42-a399-4903887a2313" isDerived="false" sourceEndRoleName="User" targetEndRoleName="View Topics" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="8a405a1f-e53d-4b43-b02e-255dc2b1a6d4" LastKnownName="View Topics" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="5fcdcb8b-cac2-4e04-88be-182dede98125" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="9f9b4ad0-a57f-48e7-9863-6e5cec3856a9" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="fe1fb880-6f2a-429e-9242-adccfac540ea" name="View Topics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="2d36b523-a160-4151-811f-d9b4524026ac" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="8936a9c9-43c6-421a-926c-913a754a08b8" />
-          </association>
-          <association Id="a4751bcc-820c-4b32-b784-b006b392b9d6" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Post Comment" isLeaf="false" isAbstract="false">
+          <association Id="fc0b3663-399b-44a2-82f9-7ad5d3cab1f1" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Post Comment" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="c0d5bb6d-23c2-451f-99fc-957152e2db56" LastKnownName="Post Comment" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="ad6ca8bf-c7a5-43df-a233-816100ff24ef" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="cf840074-a027-4fa5-914a-b60df8a5ebbd" />
+                <memberEnd Id="1f88da2e-f9f3-425c-8e33-601e04831d64" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e13d449f-cdc4-410a-bd7d-d25dd8349bd0" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="d6fd6438-d64c-44b0-af9f-619e52bba880" name="Post Comment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="717b8e65-81ec-4bab-9ba2-390a87ec7f76" />
+                <memberEnd Id="e4f0b0a7-33b8-4198-a9f8-39d405863870" name="Post Comment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b3e99053-ee0f-423a-bd93-4990096f04f3" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="49f9582a-6005-4cde-b2ad-531982c75dbf" />
+            <elementDefinition Id="121747de-c676-4499-a84a-5943fe4efb43" />
           </association>
-          <association Id="cb9b2c2e-71dc-4e73-96a7-150d8e2db37d" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Rate Topic" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="038bc625-081c-4c9c-bcb9-7b0560899d6f" LastKnownName="Rate Topic" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="b8aea481-3686-4b2b-ba76-3f4c28045d3b" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="29aa4d28-a25a-462b-8d8c-27c57aa7589b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="4ed751e3-451f-447d-9316-ded4e1459cf0" name="Rate Topic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="ae371d4b-13a0-470d-9c95-3ffafc5fc821" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="5c4e10d4-4c29-4984-b5a3-031b633ac910" />
-          </association>
-          <association Id="6092e594-eb28-420c-9dc7-52b2acd4d972" isDerived="false" sourceEndRoleName="User" targetEndRoleName="View Comments" isLeaf="false" isAbstract="false">
+          <association Id="969204a7-8a39-45fd-b460-5fe5cc6ad136" isDerived="false" sourceEndRoleName="User" targetEndRoleName="View Comments" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="82b79e24-9de4-4973-8f9b-27ddf2ddf3c4" LastKnownName="View Comments" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="09377624-ed69-4384-a62b-bf55dcb6b8ca" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="ccf535e4-0438-4573-a7da-ae5a494a09fe" />
+                <memberEnd Id="a730e78b-417e-4c56-a6e0-67980d185ff7" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6b4a1d79-3147-47c3-98c5-c520fa4ec23d" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="613c5c02-587b-43ed-bb2a-f757c6a81698" name="View Comments" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="38c62678-42b3-4c00-b72f-6b2d2003bd2b" />
+                <memberEnd Id="82598758-9be8-4f39-ba3b-0db004849ba5" name="View Comments" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="70d8f20d-88b4-4e6e-9543-0c9a0ad37aa1" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="60d42a07-cf0d-40c2-8c6c-9d5e0cfca1c9" />
+            <elementDefinition Id="78e6cf20-d185-4a4b-9089-8d79df123f78" />
           </association>
         </targetEnds>
       </actor>
@@ -198,6 +166,25 @@
     <useCaseModelRootHasTypes>
       <useCase Id="038bc625-081c-4c9c-bcb9-7b0560899d6f" name="Rate Topic" isAbstract="false" isLeaf="false">
         <elementDefinition Id="b40b89e2-1675-440e-9189-75400d57e4b2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1df3f4b1-9ee8-4aee-be84-afe51cded96c" name="Manage Topics" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6cbf4332-5557-4d2e-af64-f87473479791" />
+        <extendedCases>
+          <extend Id="a091628b-9605-4d77-be2d-00c67f0659b9">
+            <useCaseMoniker Id="2b869a88-7839-466e-b72e-86b9fca88745" LastKnownName="Post Topic" />
+            <elementDefinition Id="0753af54-376b-4c96-93c8-ad78e5b5d563" />
+          </extend>
+          <extend Id="ab93132f-bd85-4016-b809-7fc42ef97de9">
+            <useCaseMoniker Id="8a405a1f-e53d-4b43-b02e-255dc2b1a6d4" LastKnownName="View Topics" />
+            <elementDefinition Id="bdafd080-b4b8-468c-8d0f-0e17aef774a0" />
+          </extend>
+          <extend Id="ec6b3e06-8c19-48fc-a115-56f917856858">
+            <useCaseMoniker Id="038bc625-081c-4c9c-bcb9-7b0560899d6f" LastKnownName="Rate Topic" />
+            <elementDefinition Id="dbac28be-baca-4864-aa5f-a9c1b405de9d" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>

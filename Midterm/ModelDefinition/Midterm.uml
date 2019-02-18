@@ -32,7 +32,7 @@ A website that mines user's opinions and ranks them based on other's comments</b
           LastKnownName="User"
           LastKnownLocation="Midterm.uml" />
         <actorMoniker
-          Id="4a759f7c-5f91-44ae-a3eb-399e311f16f9"
+          Id="0c009160-f5a8-4fed-906b-e6f06231e0f4"
           LastKnownName="Admin"
           LastKnownLocation="Midterm.uml" />
       </annotatedElements>
@@ -173,20 +173,20 @@ Database required to hold opinions
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="6dadbbfa-216d-40f4-b57d-1238a209dc3f"
+            Id="c5c14ba6-a04e-48d4-bbcb-e9025277dc59"
             isDerived="false"
             sourceEndRoleName="User"
-            targetEndRoleName="Post Topic"
+            targetEndRoleName="Manage Topics"
             isLeaf="false"
             isAbstract="false">
             <useCaseMoniker
-              Id="65da316b-dc5f-4d88-a7d7-84cbf70294f9"
-              LastKnownName="Post Topic"
+              Id="6cbf4332-5557-4d2e-af64-f87473479791"
+              LastKnownName="Manage Topics"
               LastKnownLocation="Midterm.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="61c7132f-081f-4fe9-b11d-f98e2d002023"
+                  Id="3096223e-aab9-4e4a-86a3-879a71ca9f6a"
                   name="User"
                   isLeaf="false"
                   isStatic="false"
@@ -199,8 +199,8 @@ Database required to hold opinions
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="fa317d32-fe6a-485c-8c2c-5028a4b355d1"
-                  name="Post Topic"
+                  Id="554aba05-425b-4061-8ecc-c872605e6cc2"
+                  name="Manage Topics"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -212,46 +212,7 @@ Database required to hold opinions
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="8936a9c9-43c6-421a-926c-913a754a08b8"
-            isDerived="false"
-            sourceEndRoleName="User"
-            targetEndRoleName="View Topics"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="9673347b-87f8-4bf0-8ffa-b19815b893e5"
-              LastKnownName="View Topics"
-              LastKnownLocation="Midterm.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="9f9b4ad0-a57f-48e7-9863-6e5cec3856a9"
-                  name="User"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2d36b523-a160-4151-811f-d9b4524026ac"
-                  name="View Topics"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="49f9582a-6005-4cde-b2ad-531982c75dbf"
+            Id="121747de-c676-4499-a84a-5943fe4efb43"
             isDerived="false"
             sourceEndRoleName="User"
             targetEndRoleName="Post Comment"
@@ -264,7 +225,7 @@ Database required to hold opinions
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="cf840074-a027-4fa5-914a-b60df8a5ebbd"
+                  Id="e13d449f-cdc4-410a-bd7d-d25dd8349bd0"
                   name="User"
                   isLeaf="false"
                   isStatic="false"
@@ -277,7 +238,7 @@ Database required to hold opinions
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="717b8e65-81ec-4bab-9ba2-390a87ec7f76"
+                  Id="b3e99053-ee0f-423a-bd93-4990096f04f3"
                   name="Post Comment"
                   isLeaf="false"
                   isStatic="false"
@@ -290,46 +251,7 @@ Database required to hold opinions
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="5c4e10d4-4c29-4984-b5a3-031b633ac910"
-            isDerived="false"
-            sourceEndRoleName="User"
-            targetEndRoleName="Rate Topic"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="b40b89e2-1675-440e-9189-75400d57e4b2"
-              LastKnownName="Rate Topic"
-              LastKnownLocation="Midterm.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="29aa4d28-a25a-462b-8d8c-27c57aa7589b"
-                  name="User"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ae371d4b-13a0-470d-9c95-3ffafc5fc821"
-                  name="Rate Topic"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="60d42a07-cf0d-40c2-8c6c-9d5e0cfca1c9"
+            Id="78e6cf20-d185-4a4b-9089-8d79df123f78"
             isDerived="false"
             sourceEndRoleName="User"
             targetEndRoleName="View Comments"
@@ -342,7 +264,7 @@ Database required to hold opinions
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="ccf535e4-0438-4573-a7da-ae5a494a09fe"
+                  Id="6b4a1d79-3147-47c3-98c5-c520fa4ec23d"
                   name="User"
                   isLeaf="false"
                   isStatic="false"
@@ -355,7 +277,7 @@ Database required to hold opinions
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="38c62678-42b3-4c00-b72f-6b2d2003bd2b"
+                  Id="70d8f20d-88b4-4e6e-9543-0c9a0ad37aa1"
                   name="View Comments"
                   isLeaf="false"
                   isStatic="false"
@@ -369,13 +291,6 @@ Database required to hold opinions
           </association>
         </targetEnds>
       </actor>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <actor
-        Id="4a759f7c-5f91-44ae-a3eb-399e311f16f9"
-        name="Admin"
-        isAbstract="false"
-        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -399,6 +314,12 @@ Database required to hold opinions
               LastKnownLocation="Midterm.uml" />
           </extend>
         </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -406,49 +327,98 @@ Database required to hold opinions
         Id="4e4b80cf-b235-48e3-a51b-195804943eae"
         name="Update Profile Picture"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="41fb1b38-a18a-49fc-a4ed-4efdae00348b"
         name="Update Status"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="6aeec5f1-87fb-4a0b-b98c-64f740ab5eac"
         name="View Profile Updates"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="65da316b-dc5f-4d88-a7d7-84cbf70294f9"
         name="Post Topic"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="9673347b-87f8-4bf0-8ffa-b19815b893e5"
         name="View Topics"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="9802701c-30fb-48e9-bda4-555c3dc83489"
         name="Post Comment"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="c96edbd8-b763-470d-9c82-5e1081720fb3"
         name="View Comments"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -465,6 +435,12 @@ Database required to hold opinions
               LastKnownLocation="Midterm.uml" />
           </include>
         </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -472,7 +448,185 @@ Database required to hold opinions
         Id="b40b89e2-1675-440e-9189-75400d57e4b2"
         name="Rate Topic"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0c009160-f5a8-4fed-906b-e6f06231e0f4"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="176b8bcb-9932-4e84-84ae-171c3cc994f0"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Add Keywords to Database"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d4d73b3b-dee7-488d-99a5-64e961c03871"
+              LastKnownName="Add Keywords to Database"
+              LastKnownLocation="Midterm.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="88717dfb-36d5-4e16-bdfe-bb3ef1613a02"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="204240c7-3f0d-47a4-ad67-1592d341cb8f"
+                  name="Add Keywords to Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fa8c4e00-a0f7-4f91-8024-54a40b13e152"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Add Posts"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2dd9a402-4ea3-4244-823c-81eacd464e6d"
+              LastKnownName="Add Posts"
+              LastKnownLocation="Midterm.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c18836fe-1592-4f25-b6f5-ffa9b69b5908"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="db450ee6-2837-4123-98e6-fa279f1187c6"
+                  name="Add Posts"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d4d73b3b-dee7-488d-99a5-64e961c03871"
+        name="Add Keywords to Database"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="4d2d2a37-e1ef-4269-aed3-7a91af2d0a7d">
+            <useCaseMoniker
+              Id="65da316b-dc5f-4d88-a7d7-84cbf70294f9"
+              LastKnownName="Post Topic"
+              LastKnownLocation="Midterm.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2dd9a402-4ea3-4244-823c-81eacd464e6d"
+        name="Add Posts"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="d6b03a1a-9b63-4b37-8107-df714cf78626">
+            <useCaseMoniker
+              Id="65da316b-dc5f-4d88-a7d7-84cbf70294f9"
+              LastKnownName="Post Topic"
+              LastKnownLocation="Midterm.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6cbf4332-5557-4d2e-af64-f87473479791"
+        name="Manage Topics"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="0753af54-376b-4c96-93c8-ad78e5b5d563">
+            <useCaseMoniker
+              Id="65da316b-dc5f-4d88-a7d7-84cbf70294f9"
+              LastKnownName="Post Topic"
+              LastKnownLocation="Midterm.uml" />
+          </extend>
+          <extend
+            Id="bdafd080-b4b8-468c-8d0f-0e17aef774a0">
+            <useCaseMoniker
+              Id="9673347b-87f8-4bf0-8ffa-b19815b893e5"
+              LastKnownName="View Topics"
+              LastKnownLocation="Midterm.uml" />
+          </extend>
+          <extend
+            Id="dbac28be-baca-4864-aa5f-a9c1b405de9d">
+            <useCaseMoniker
+              Id="b40b89e2-1675-440e-9189-75400d57e4b2"
+              LastKnownName="Rate Topic"
+              LastKnownLocation="Midterm.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="0041afa9-fde2-4729-a123-669f5aab8211"
+            LastKnownName="Social Mining"
+            LastKnownLocation="Midterm.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

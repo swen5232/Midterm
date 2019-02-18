@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e19ccc89-d3ca-4aaf-a754-c3ef965fcdf5" name="Admin" linkedPackageId="3f0318fa-4789-4f01-b71a-77f838d273b2" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="3314208f-33cc-4d7a-8dd0-3d88e65b11e6">
+      <profileInstance Id="bfe7b149-b1a5-4f3e-ad26-e61938794d79" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a6df153b-de4a-4ece-8709-25c6061a2cae">
+      <profileInstance Id="95f0a2ed-d5d8-4cf8-9aa6-7ae83e432fd9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="c7655cdf-e5ad-490c-ae66-61660680e747" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0c009160-f5a8-4fed-906b-e6f06231e0f4" />
+        <targetEnds>
+          <association Id="773eeb7a-0eb7-4d2e-a419-229f4f567828" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Add Keywords to Database" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9faa94aa-a251-4d3d-9c4f-d07135d09048" LastKnownName="Add Keywords to Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c16542ea-0fe6-461d-86ff-c5abbac7ec62" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="88717dfb-36d5-4e16-bdfe-bb3ef1613a02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8912f6d8-d37f-4d43-a22f-f40ab05b98d8" name="Add Keywords to Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="204240c7-3f0d-47a4-ad67-1592d341cb8f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="176b8bcb-9932-4e84-84ae-171c3cc994f0" />
+          </association>
+          <association Id="d40ad478-e8cd-47f8-af22-126df13423df" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Add Posts" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7e156c25-1318-402e-aa3a-1873dcc342d0" LastKnownName="Add Posts" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c1e01dbd-c883-4726-8296-6b7392d91b59" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c18836fe-1592-4f25-b6f5-ffa9b69b5908" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2ac9c9c2-bf8b-4aac-9ab1-e5c566c8388d" name="Add Posts" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="db450ee6-2837-4123-98e6-fa279f1187c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fa8c4e00-a0f7-4f91-8024-54a40b13e152" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9faa94aa-a251-4d3d-9c4f-d07135d09048" name="Add Keywords to Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4d73b3b-dee7-488d-99a5-64e961c03871" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7e156c25-1318-402e-aa3a-1873dcc342d0" name="Add Posts" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2dd9a402-4ea3-4244-823c-81eacd464e6d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3f0318fa-4789-4f01-b71a-77f838d273b2" name="Midterm">
+    <elementDefinition Id="f8ba2db5-5af3-464e-b031-5157ce8596a8" />
+  </package>
+</useCaseModelRoot>

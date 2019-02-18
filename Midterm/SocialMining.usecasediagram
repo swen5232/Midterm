@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="78432b67-79cb-461c-ab92-d344b59ee8a4" name="SocialMining" linkedPackageId="46cb8d80-3c65-44e0-a619-f9ee7a686812" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="08c1dffb-ec0f-446e-a798-fab5298aa0a0">
+      <profileInstance Id="1ba62cbe-4e8f-4d6a-9baf-5289baed1ee7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="981a3e61-a345-49b5-9067-47e8ee30c299">
+      <profileInstance Id="ef6cb651-2f65-44c3-b46d-696a7a4e716a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="8e082801-2a51-446c-9df9-e85a60e5df52" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fb32d69e-cf54-4d5a-a55d-f6e8a26e7a84" />
+        <targetEnds>
+          <association Id="c43461a8-624f-4aea-a973-357e1ada98cc" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Manage User Profile" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="12f22bcc-10f6-4735-98d0-a203da5464d9" LastKnownName="Manage User Profile" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7f3256f8-07fb-4789-9bcd-1d0a6cdff5df" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5597d192-0cdd-42a6-b054-16713bd7f606" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb2fa122-6f66-46ce-a1ff-f2de0623f99c" name="Manage User Profile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2b8e49b0-a7ba-4342-a00f-370c1adcf9ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="84b89dc4-9a19-441c-880a-a189b3489dc0" />
+          </association>
+          <association Id="702e364e-c519-4f20-abdb-12ffa3daeb6e" isDerived="false" sourceEndRoleName="User" targetEndRoleName="View Profile Updates" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2f9a46d9-8969-413d-9078-405db4655440" LastKnownName="View Profile Updates" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ec27c8f-2260-40a8-87b9-a62b7145086d" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="46901ad2-e0f7-4de5-8d89-e896413cf128" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0b50a8ce-9594-4b7d-946e-69308f0778d8" name="View Profile Updates" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="77a3ee42-4d4b-47ac-be62-49d59dfa6e8d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="614c9e1d-f2fd-4f06-acff-c8a5d9b5c764" />
+          </association>
+          <association Id="7c23acd9-4df6-49bb-9b2b-128a9061533e" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Manage Topics" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8f17f930-a167-481a-9572-3c334535793e" LastKnownName="Manage Topics" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b11abc5-37ab-4cff-abff-332a3a3c3bfc" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3096223e-aab9-4e4a-86a3-879a71ca9f6a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a51a9cb0-ed8b-4dac-83cc-0871190d1574" name="Manage Topics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="554aba05-425b-4061-8ecc-c872605e6cc2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c5c14ba6-a04e-48d4-bbcb-e9025277dc59" />
+          </association>
+          <association Id="ffebfcd2-47cd-4fdb-bcfb-2901c1fa48f7" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Post Comment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="102a0ebe-ded8-4425-90f7-25de4ae32745" LastKnownName="Post Comment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="79af56fb-84ed-4fa0-b562-e9acccd1baf7" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e13d449f-cdc4-410a-bd7d-d25dd8349bd0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eaa6ddd6-cdaf-44ce-b5f9-ebe76b68fd68" name="Post Comment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b3e99053-ee0f-423a-bd93-4990096f04f3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="121747de-c676-4499-a84a-5943fe4efb43" />
+          </association>
+          <association Id="26867dd6-754e-47b3-a345-c8e8ee157dc2" isDerived="false" sourceEndRoleName="User" targetEndRoleName="View Comments" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ee938f76-8512-4e68-a1f3-35d24d4fe2aa" LastKnownName="View Comments" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7b075135-364a-47b8-a334-fc798bb4791f" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6b4a1d79-3147-47c3-98c5-c520fa4ec23d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c86294df-d1c7-4c8e-8918-b184488c3e24" name="View Comments" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="70d8f20d-88b4-4e6e-9543-0c9a0ad37aa1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="78e6cf20-d185-4a4b-9089-8d79df123f78" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="633faf29-44a3-4d37-adbf-f42457263963" name="Social Mining" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0041afa9-fde2-4729-a123-669f5aab8211" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="12f22bcc-10f6-4735-98d0-a203da5464d9" name="Manage User Profile" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8624f504-30de-4184-a6f8-4a4b6b2529ca" />
+        <extendedCases>
+          <extend Id="2531fd50-9215-4817-ba32-54031d5e3fa3">
+            <useCaseMoniker Id="90e59a52-741a-47a8-8945-fa62c448b6ba" LastKnownName="Update Profile Picture" />
+            <elementDefinition Id="2e02f2eb-6b71-4c88-b1a8-d248ddcf77d3" />
+          </extend>
+          <extend Id="2db3e685-4100-4849-808c-4170b3492e1e">
+            <useCaseMoniker Id="fb5469b8-e09d-435c-bfb4-3f78ab74c0e6" LastKnownName="Update Status" />
+            <elementDefinition Id="6458a3a6-009d-40b9-8536-02ae307045b7" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="90e59a52-741a-47a8-8945-fa62c448b6ba" name="Update Profile Picture" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4e4b80cf-b235-48e3-a51b-195804943eae" />
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fb5469b8-e09d-435c-bfb4-3f78ab74c0e6" name="Update Status" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="41fb1b38-a18a-49fc-a4ed-4efdae00348b" />
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2f9a46d9-8969-413d-9078-405db4655440" name="View Profile Updates" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6aeec5f1-87fb-4a0b-b98c-64f740ab5eac" />
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="08f525d2-243f-4f8c-ae26-0ac225fb0fae" name="View Status" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="15a2cea9-41c4-4146-8f04-037dd53daadb" />
+        <additions>
+          <include Id="a5381b72-db1b-4cf1-8361-2a1ccf78a435">
+            <useCaseMoniker Id="2f9a46d9-8969-413d-9078-405db4655440" LastKnownName="View Profile Updates" />
+            <elementDefinition Id="4059fc2f-33f9-4fc6-954a-3b9babff8c8a" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="102a0ebe-ded8-4425-90f7-25de4ae32745" name="Post Comment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9802701c-30fb-48e9-bda4-555c3dc83489" />
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ee938f76-8512-4e68-a1f3-35d24d4fe2aa" name="View Comments" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c96edbd8-b763-470d-9c82-5e1081720fb3" />
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8f17f930-a167-481a-9572-3c334535793e" name="Manage Topics" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6cbf4332-5557-4d2e-af64-f87473479791" />
+        <extendedCases>
+          <extend Id="de907a92-6a13-4e2b-94f9-7c394b36a9e9">
+            <useCaseMoniker Id="44868b51-dff8-4308-8aee-9726f2344da9" LastKnownName="Post Topic" />
+            <elementDefinition Id="0753af54-376b-4c96-93c8-ad78e5b5d563" />
+          </extend>
+          <extend Id="792239c8-121c-4e3d-b366-9c70815c501e">
+            <useCaseMoniker Id="7f132016-c290-430e-b5ae-4dc2898270db" LastKnownName="View Topics" />
+            <elementDefinition Id="bdafd080-b4b8-468c-8d0f-0e17aef774a0" />
+          </extend>
+          <extend Id="bc301a19-5c23-4bed-a8d0-6f219e6b4cf0">
+            <useCaseMoniker Id="d8c4787d-c66a-4c83-be2e-51be3a31937e" LastKnownName="Rate Topic" />
+            <elementDefinition Id="dbac28be-baca-4864-aa5f-a9c1b405de9d" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="44868b51-dff8-4308-8aee-9726f2344da9" name="Post Topic" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="65da316b-dc5f-4d88-a7d7-84cbf70294f9" />
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="7f132016-c290-430e-b5ae-4dc2898270db" name="View Topics" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9673347b-87f8-4bf0-8ffa-b19815b893e5" />
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d8c4787d-c66a-4c83-be2e-51be3a31937e" name="Rate Topic" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b40b89e2-1675-440e-9189-75400d57e4b2" />
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="dbe960d1-f0b0-466e-9321-f4225b523818" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0c009160-f5a8-4fed-906b-e6f06231e0f4" />
+        <targetEnds>
+          <association Id="e42ccca7-18b7-4171-95cd-5d06887c5441" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Add Keywords to Database" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="096e6bd3-e8ba-49c6-86e4-45e53fe5eac1" LastKnownName="Add Keywords to Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d7fb9d96-f4fb-403a-adf9-0aa70420c188" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="88717dfb-36d5-4e16-bdfe-bb3ef1613a02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22e8b19f-b4bb-49a5-867b-1f62e0b0ff7e" name="Add Keywords to Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="204240c7-3f0d-47a4-ad67-1592d341cb8f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="176b8bcb-9932-4e84-84ae-171c3cc994f0" />
+          </association>
+          <association Id="348ccfce-ef54-4b8c-b2d5-59e5e325e4c8" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Add Posts" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="309d7437-890b-442b-b1b4-1c1f2706ca92" LastKnownName="Add Posts" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec5dc3e9-603f-4e67-86e7-641db6afc0da" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c18836fe-1592-4f25-b6f5-ffa9b69b5908" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05feac45-99ee-4ccc-8ef6-6fbf5d621efc" name="Add Posts" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="db450ee6-2837-4123-98e6-fa279f1187c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fa8c4e00-a0f7-4f91-8024-54a40b13e152" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="096e6bd3-e8ba-49c6-86e4-45e53fe5eac1" name="Add Keywords to Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4d73b3b-dee7-488d-99a5-64e961c03871" />
+        <suppliersInternal>
+          <dependency Id="b5df8268-135f-4936-9205-514b59526808">
+            <useCaseMoniker Id="44868b51-dff8-4308-8aee-9726f2344da9" LastKnownName="Post Topic" />
+            <elementDefinition Id="4d2d2a37-e1ef-4269-aed3-7a91af2d0a7d" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="309d7437-890b-442b-b1b4-1c1f2706ca92" name="Add Posts" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2dd9a402-4ea3-4244-823c-81eacd464e6d" />
+        <suppliersInternal>
+          <dependency Id="fd5bcfc7-25a0-460c-ab3e-d87f68d04675">
+            <useCaseMoniker Id="44868b51-dff8-4308-8aee-9726f2344da9" LastKnownName="Post Topic" />
+            <elementDefinition Id="d6b03a1a-9b63-4b37-8107-df714cf78626" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="633faf29-44a3-4d37-adbf-f42457263963" LastKnownName="Social Mining" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="46cb8d80-3c65-44e0-a619-f9ee7a686812" name="Midterm">
+    <elementDefinition Id="f8ba2db5-5af3-464e-b031-5157ce8596a8" />
+  </package>
+</useCaseModelRoot>

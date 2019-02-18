@@ -10,10 +10,6 @@
       <commentMoniker Id="87825e56-9e34-4af2-a760-c8b36096c069" />
       <relativeChildShapes />
     </commentShape>
-    <actorShape Id="f0295ba4-ddda-46e1-9357-8ba2d9ddc834" absoluteBounds="8.5, 2.5, 0.5, 0.5" isReference="false" heightOffset="0">
-      <actorMoniker Id="94112167-cf14-41a5-8720-01778153d9e9" LastKnownName="Admin" />
-      <relativeChildShapes />
-    </actorShape>
     <commentShape Id="14cd51db-e1c8-4df4-bbe9-532cdbebe5dc" absoluteBounds="7.75, 3.375, 2.125, 2.125" customColor="251, 247, 200">
       <commentMoniker Id="bbda768e-553a-4b5f-a77c-1b89cba4b291" />
       <relativeChildShapes />
@@ -40,6 +36,10 @@
       <commentMoniker Id="d631a367-16aa-4555-8653-757e3e3a15f1" />
       <relativeChildShapes />
     </commentShape>
+    <actorShape Id="12c7a47e-4887-4bb8-8f90-3a65b822906d" absoluteBounds="7.875, 2.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="213709fb-eb17-429e-a2bb-ec1d20eda815" LastKnownName="Admin" />
+      <relativeChildShapes />
+    </actorShape>
     <SubsystemShape Id="465d5909-ae2d-4dae-9ff9-0de1ee80d49e" absoluteBounds="3.5, 1.75, 4, 2.875" customColor="Silver">
       <subsystemMoniker Id="cdae4bff-81d8-4134-b1e7-7978c482fd03" LastKnownName="Social Mining" />
       <nestedChildShapes>
@@ -59,11 +59,11 @@
         <actorShapeMoniker Id="d80ec447-64b6-45a4-8df9-8360da8868ad" />
       </nodes>
     </commentConnector>
-    <commentConnector edgePoints="[(6.625 : 2.875); (8.5 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+    <commentConnector edgePoints="[(6.625 : 2.9375); (7.875 : 2.9375)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
       <relativeChildShapes />
       <nodes>
         <commentShapeMoniker Id="a19c758f-f1cb-42cd-ad56-546b54707d2c" />
-        <actorShapeMoniker Id="f0295ba4-ddda-46e1-9357-8ba2d9ddc834" />
+        <actorShapeMoniker Id="12c7a47e-4887-4bb8-8f90-3a65b822906d" />
       </nodes>
     </commentConnector>
   </nestedChildShapes>

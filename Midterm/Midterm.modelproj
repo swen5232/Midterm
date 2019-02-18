@@ -22,12 +22,26 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Admin.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Admin.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Admin.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="Brainstorm.usecasediagram">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Brainstorm.usecasediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>Brainstorm.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="SocialMining.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SocialMining.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SocialMining.usecasediagram</DependentUpon>
     </Content>
     <Content Include="User.usecasediagram">
       <SubType>Content</SubType>
