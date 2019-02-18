@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Domain Models\BusinessDomainModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Domain Models\BusinessDomainModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Domain Models\BusinessDomainModel.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Use Case Diagrams\Admin.usecasediagram">
       <SubType>Content</SubType>
     </Content>
@@ -54,6 +61,7 @@
     <Content Include="ModelDefinition\Midterm.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Domain Models" />
     <Folder Include="Use Case Diagrams" />
   </ItemGroup>
 </Project>
