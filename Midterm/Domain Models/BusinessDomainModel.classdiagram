@@ -132,6 +132,9 @@
           <operation Id="d63aa48d-fa6c-4a72-9431-c0679e5d42c2" name="ViewFeed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="20429e04-d5b2-4865-8613-b3aff2c615e3" />
           </operation>
+          <operation Id="6f6ea3bd-f16a-41d9-b976-ec189ef6daaf" name="ViewStatus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7eefc232-475b-4682-ac88-01fcb5e1d0e9" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>

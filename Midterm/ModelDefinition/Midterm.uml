@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="f8ba2db5-5af3-464e-b031-5157ce8596a8"
   name="Midterm" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -871,6 +871,14 @@ Database required to hold opinions
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="7eefc232-475b-4682-ac88-01fcb5e1d0e9"
+            name="ViewStatus"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1245,6 +1253,152 @@ Database required to hold opinions
             isQuery="false" />
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="6d9efde2-3797-49f4-898c-7b22d879d899"
+        name="UpdateStatus"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <opaqueAction
+            Id="5953f671-f335-4da6-8179-986e990648d9"
+            name="User logs in"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bf5368b7-4dd2-4eb6-8095-5b515925dd4a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f9e51754-2c6e-4801-9d26-e72ee79e6924"
+                  LastKnownName="User clicks on Profile"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="c699c0d0-cb96-4ca3-a0ec-775d470251d0"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="f9e51754-2c6e-4801-9d26-e72ee79e6924"
+            name="User clicks on Profile"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3794f5b3-dccf-4298-8c40-259671afbcc5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cd218acd-846f-485f-9cc9-e9e01ad68c8e"
+                  LastKnownName="User Clicks on New +"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cd218acd-846f-485f-9cc9-e9e01ad68c8e"
+            name="User Clicks on New +"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6281ae15-82fd-4be0-87d0-05129835cf7b"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="c3811f60-7f80-4665-a7a7-59a9c664db7e"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="c3811f60-7f80-4665-a7a7-59a9c664db7e"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1c06628c-6139-418c-a4c1-e3dacae15bfb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e645220e-57a2-4306-aca6-be8dd522a8ba"
+                  LastKnownName="Create New Status"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b5d72379-7b4a-445b-baa0-24f088a2f689"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="80dd47bc-050b-4613-b359-63cb321ad7ae"
+                  LastKnownName="Update Profile Picture"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="e645220e-57a2-4306-aca6-be8dd522a8ba"
+            name="Create New Status"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1242084c-c656-4a84-ac01-17149beb3393"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="0cd4a72e-6655-4a4a-a68f-45095898ff4c"
+                  LastKnownName="Update Database"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="80dd47bc-050b-4613-b359-63cb321ad7ae"
+            name="Update Profile Picture"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="12cc3c9f-dc10-4eff-aa77-7d3d4638de5a"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="0cd4a72e-6655-4a4a-a68f-45095898ff4c"
+                  LastKnownName="Update Database"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <callBehaviorAction
+            Id="0cd4a72e-6655-4a4a-a68f-45095898ff4c"
+            name="Update Database"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="495fc419-9e02-452d-9cfc-d2eda61f3d30"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="c699c0d0-cb96-4ca3-a0ec-775d470251d0"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <initialNode
+            Id="5e071ffb-1b54-4ad3-b445-68a631aff5a5"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e6177dd5-d1f3-4595-b0ac-11689e241f1b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5953f671-f335-4da6-8179-986e990648d9"
+                  LastKnownName="User logs in"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
