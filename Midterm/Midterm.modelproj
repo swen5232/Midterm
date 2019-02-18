@@ -22,37 +22,38 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="Admin.usecasediagram">
+    <Content Include="Use Case Diagrams\Admin.usecasediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Admin.usecasediagram.layout">
+    <Content Include="Use Case Diagrams\Admin.usecasediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Admin.usecasediagram</DependentUpon>
+      <DependentUpon>Use Case Diagrams\Admin.usecasediagram</DependentUpon>
     </Content>
-    <Content Include="Brainstorm.usecasediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Brainstorm.usecasediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Brainstorm.usecasediagram</DependentUpon>
-    </Content>
-    <Content Include="SocialMining.usecasediagram">
+    <Content Include="Use Case Diagrams\Brainstorm.usecasediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="SocialMining.usecasediagram.layout">
+    <Content Include="Use Case Diagrams\Brainstorm.usecasediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>SocialMining.usecasediagram</DependentUpon>
+      <DependentUpon>Use Case Diagrams\Brainstorm.usecasediagram</DependentUpon>
     </Content>
-    <Content Include="User.usecasediagram">
+    <Content Include="Use Case Diagrams\SocialMining.usecasediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="User.usecasediagram.layout">
+    <Content Include="Use Case Diagrams\SocialMining.usecasediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>User.usecasediagram</DependentUpon>
+      <DependentUpon>Use Case Diagrams\SocialMining.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Case Diagrams\User.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Case Diagrams\User.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Case Diagrams\User.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Midterm.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Use Case Diagrams" />
   </ItemGroup>
 </Project>
