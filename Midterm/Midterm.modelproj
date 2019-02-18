@@ -29,8 +29,12 @@
       <SubType>Content</SubType>
       <DependentUpon>Brainstorm.usecasediagram</DependentUpon>
     </Content>
-    <Content Include="README.md">
+    <Content Include="User.usecasediagram">
       <SubType>Content</SubType>
+    </Content>
+    <Content Include="User.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>User.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Midterm.uml">
