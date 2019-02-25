@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="f8ba2db5-5af3-464e-b031-5157ce8596a8"
   name="Midterm" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1470,7 +1470,7 @@ Database required to hold opinions
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="b9fc129b-c9b8-430e-84b4-a666947c27cd"
+                Id="0ce59194-8cf7-49bb-af77-2583225569b4"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="d40da17e-7540-4dab-8576-ff687962f068"
@@ -1500,7 +1500,7 @@ Database required to hold opinions
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="df329679-7a82-4e4c-9452-8fd59a3597a9"
+                Id="a341e684-3578-42a8-bd2c-317030bcc830"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="c8e801cc-26c8-4333-950b-475b9736e9a8"
@@ -1519,27 +1519,19 @@ Database required to hold opinions
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="e1fe48c9-ca29-4a54-9422-ea0a8b60b775"
+                Id="e3e3c283-623c-4d52-8c1e-eda7d018834f"
                 isLeaf="false">
                 <opaqueActionMoniker
-                  Id="08f83d59-4873-44d0-85bb-167331b8f38b"
-                  LastKnownName="User Clicks New +"
+                  Id="ad5d985c-e045-42ae-8d26-1a8e99f686ad"
+                  LastKnownName="User Interacts with Feed"
                   LastKnownLocation="Midterm.uml" />
               </controlFlow>
               <controlFlow
-                Id="d1c9c0a1-29a0-4d90-be0f-47d2099d3738"
+                Id="9a9b0e92-c909-46a2-b020-e44e6b08df7c"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="9c3a4919-826c-4555-a8a8-286bec363964"
                   LastKnownName="Logout"
-                  LastKnownLocation="Midterm.uml" />
-              </controlFlow>
-              <controlFlow
-                Id="a3c0545b-dc8d-4bee-9d29-4829c4d764da"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="ac6ac929-d724-4b7e-84b5-c19d1af69d2f"
-                  LastKnownName="User Clicks on Topic"
                   LastKnownLocation="Midterm.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -1561,61 +1553,30 @@ Database required to hold opinions
           </opaqueAction>
           <opaqueAction
             Id="ac6ac929-d724-4b7e-84b5-c19d1af69d2f"
-            name="User Clicks on Topic"
+            name="User Views Topic"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="c799172b-5e9d-4fa2-bad7-c2d7d7971411"
+                Id="af35a834-850a-41b8-a0e8-326bf635280d"
                 isLeaf="false">
                 <decisionNodeMoniker
-                  Id="1d0f36c6-33e6-4143-b5ba-9a2a59568d63"
-                  LastKnownName="Decision2"
+                  Id="baae6842-08a1-4b94-ae57-bdf55133af7e"
+                  LastKnownName="Decision3"
                   LastKnownLocation="Midterm.uml" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <decisionNode
-            Id="1d0f36c6-33e6-4143-b5ba-9a2a59568d63"
-            name="Decision2"
-            isLeaf="false">
-            <flowNodeTargets>
-              <controlFlow
-                Id="827644ae-005b-4b75-82de-8386b38a9581"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="c8e801cc-26c8-4333-950b-475b9736e9a8"
-                  LastKnownName="User Views Feed"
-                  LastKnownLocation="Midterm.uml" />
-              </controlFlow>
-              <controlFlow
-                Id="8403855e-4dfc-49fb-bdc8-6470f817fd3b"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="6e20b6f4-45c5-4b57-a214-c8c0a27d8133"
-                  LastKnownName="User Clicks on Comment"
-                  LastKnownLocation="Midterm.uml" />
-              </controlFlow>
-              <controlFlow
-                Id="10b120ce-17d8-47a6-a6b5-3e6f25af02d8"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="564cbdb7-6aa9-4510-8b4c-c06037508e21"
-                  LastKnownName="User Up/Down Votes Rating"
-                  LastKnownLocation="Midterm.uml" />
-              </controlFlow>
-            </flowNodeTargets>
-          </decisionNode>
           <opaqueAction
             Id="564cbdb7-6aa9-4510-8b4c-c06037508e21"
             name="User Up/Down Votes Rating"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="44d38cfe-bb97-454c-a561-4e6385807469"
+                Id="521b0da6-0d27-44f1-8c63-8b4086e5fa56"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="ac6ac929-d724-4b7e-84b5-c19d1af69d2f"
-                  LastKnownName="User Clicks on Topic"
+                  LastKnownName="User Views Topic"
                   LastKnownLocation="Midterm.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -1656,15 +1617,129 @@ Database required to hold opinions
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="ef183453-cb83-4055-b532-ccba221448cc"
+                Id="b63d64bb-99eb-4856-8d30-7696460b26e8"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="ac6ac929-d724-4b7e-84b5-c19d1af69d2f"
-                  LastKnownName="User Clicks on Topic"
+                  LastKnownName="User Views Topic"
                   LastKnownLocation="Midterm.uml" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <decisionNode
+            Id="baae6842-08a1-4b94-ae57-bdf55133af7e"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9002801f-1962-42f5-aaa4-b31de2c930a4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f08e9ce0-c038-4d32-a4a2-2ff3f5d3604b"
+                  LastKnownName="User Exits Topic"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2cda312c-3c48-4417-ab7c-bdfa590a402a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c9196cab-a852-497f-ada6-254db58b88c7"
+                  LastKnownName="User Interacts with Topic"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="ad5d985c-e045-42ae-8d26-1a8e99f686ad"
+            name="User Interacts with Feed"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1a38fb0d-a146-4935-bb90-333122ef200f"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="cad5b069-09d1-43a9-b2ec-a731bd398b98"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="cad5b069-09d1-43a9-b2ec-a731bd398b98"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="85e811f4-38e7-4cea-87fb-5020230cba63"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ac6ac929-d724-4b7e-84b5-c19d1af69d2f"
+                  LastKnownName="User Views Topic"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e747fc98-8c9a-44d5-bcfb-d2513afc200a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="08f83d59-4873-44d0-85bb-167331b8f38b"
+                  LastKnownName="User Clicks New +"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="f08e9ce0-c038-4d32-a4a2-2ff3f5d3604b"
+            name="User Exits Topic"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c2a7dfa9-c40a-423c-a0e3-a595fcde7cf7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c8e801cc-26c8-4333-950b-475b9736e9a8"
+                  LastKnownName="User Views Feed"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c9196cab-a852-497f-ada6-254db58b88c7"
+            name="User Interacts with Topic"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="34c13bb6-2956-4076-8fd7-5811d67bd2fd"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="2a4b616b-0b05-4f40-9e41-e0bf842ca10b"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="2a4b616b-0b05-4f40-9e41-e0bf842ca10b"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b6477fde-a3f6-49d8-a0ed-b1a60edbb9c7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6e20b6f4-45c5-4b57-a214-c8c0a27d8133"
+                  LastKnownName="User Clicks on Comment"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="3bdf0242-e0d6-465a-821f-a243c6e19e29"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="564cbdb7-6aa9-4510-8b4c-c06037508e21"
+                  LastKnownName="User Up/Down Votes Rating"
+                  LastKnownLocation="Midterm.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </packageHasNamedElement>

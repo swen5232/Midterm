@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="7fca3109-66f4-4a40-829d-8a4e1d8c5836" name="Topics" linkedPackageId="9b7d2a3b-b98e-4e8b-9640-bf7b9dc2a911" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="7fca3109-66f4-4a40-829d-8a4e1d8c5836" name="Topics" linkedPackageId="9b7d2a3b-b98e-4e8b-9640-bf7b9dc2a911" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="42ddcd05-df32-475f-b14a-972b48243156" name="Topics" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -35,9 +35,9 @@
           <opaqueAction Id="5ddce633-7053-46d6-9b45-e24cb3ff7ff9" name="User Clicks New +" isLeaf="false">
             <elementDefinition Id="08f83d59-4873-44d0-85bb-167331b8f38b" />
             <flowNodeTargets>
-              <controlFlow Id="946aeb4c-cd88-4616-ab5d-d15ea9a003f5" isLeaf="false">
+              <controlFlow Id="c14255cc-ccb7-4d11-b966-8319764c10c1" isLeaf="false">
                 <opaqueActionMoniker Id="b55e5db3-946b-4d9b-986b-1c2805ad2ade" LastKnownName="User Creates Topic" />
-                <elementDefinition Id="b9fc129b-c9b8-430e-84b4-a666947c27cd" />
+                <elementDefinition Id="0ce59194-8cf7-49bb-af77-2583225569b4" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -53,9 +53,9 @@
           <callBehaviorAction Id="89421e2c-dd00-40c1-8222-380d7bdbcf37" name="Topic sent to Admin for Approval" isLeaf="false">
             <elementDefinition Id="487cc4f7-db73-4d29-b98d-17a96f36b8e1" />
             <flowNodeTargets>
-              <controlFlow Id="e79e3eeb-692d-49d1-8b7a-e5bfb2b798eb" isLeaf="false">
+              <controlFlow Id="33e2de2f-53bc-4163-804e-71e4dcd5695f" isLeaf="false">
                 <opaqueActionMoniker Id="f4f54f66-ba77-440e-be67-9a7e3414a451" LastKnownName="User Views Feed" />
-                <elementDefinition Id="df329679-7a82-4e4c-9452-8fd59a3597a9" />
+                <elementDefinition Id="a341e684-3578-42a8-bd2c-317030bcc830" />
               </controlFlow>
             </flowNodeTargets>
           </callBehaviorAction>
@@ -65,17 +65,13 @@
           <decisionNode Id="1c9eddcc-fb6d-493a-af02-16e23440655a" name="Decision1" isLeaf="false">
             <elementDefinition Id="56af3dab-f876-4e06-9e39-343ec645cb3e" />
             <flowNodeTargets>
-              <controlFlow Id="4915e30c-0846-4f9e-8f79-bb302c143d71" isLeaf="false">
-                <opaqueActionMoniker Id="5ddce633-7053-46d6-9b45-e24cb3ff7ff9" LastKnownName="User Clicks New +" />
-                <elementDefinition Id="e1fe48c9-ca29-4a54-9422-ea0a8b60b775" />
+              <controlFlow Id="0859ec87-414b-4ea2-b972-12b804d60301" isLeaf="false">
+                <opaqueActionMoniker Id="0d05d476-6cc1-48f6-8aa6-3bd46679866b" LastKnownName="User Interacts with Feed" />
+                <elementDefinition Id="e3e3c283-623c-4d52-8c1e-eda7d018834f" />
               </controlFlow>
-              <controlFlow Id="53c56898-55e5-4661-934b-9c4df602d89a" isLeaf="false">
+              <controlFlow Id="f310d38d-c500-4640-869e-80aafead511b" isLeaf="false">
                 <opaqueActionMoniker Id="91964644-dfce-4e32-9638-4f2ea6e22be9" LastKnownName="Logout" />
-                <elementDefinition Id="d1c9c0a1-29a0-4d90-be0f-47d2099d3738" />
-              </controlFlow>
-              <controlFlow Id="2c3c2593-3811-4f7e-92ff-bf9cc12a2585" isLeaf="false">
-                <opaqueActionMoniker Id="1627f908-c71f-44ca-b310-e40538fef7dd" LastKnownName="User Clicks on Topic" />
-                <elementDefinition Id="a3c0545b-dc8d-4bee-9d29-4829c4d764da" />
+                <elementDefinition Id="9a9b0e92-c909-46a2-b020-e44e6b08df7c" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
@@ -88,38 +84,21 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="1627f908-c71f-44ca-b310-e40538fef7dd" name="User Clicks on Topic" isLeaf="false">
+          <opaqueAction Id="1627f908-c71f-44ca-b310-e40538fef7dd" name="User Views Topic" isLeaf="false">
             <elementDefinition Id="ac6ac929-d724-4b7e-84b5-c19d1af69d2f" />
             <flowNodeTargets>
-              <controlFlow Id="8d9d0615-46d7-486d-a1a3-1ec523cfc6f1" isLeaf="false">
-                <decisionNodeMoniker Id="ed7b8947-dc0c-4346-a23f-f4ec85b2ab3a" LastKnownName="Decision2" />
-                <elementDefinition Id="c799172b-5e9d-4fa2-bad7-c2d7d7971411" />
+              <controlFlow Id="3333bc12-2021-4e0e-b2ef-50579b667911" isLeaf="false">
+                <decisionNodeMoniker Id="864f9003-4a92-4756-b632-9074be796686" LastKnownName="Decision3" />
+                <elementDefinition Id="af35a834-850a-41b8-a0e8-326bf635280d" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <decisionNode Id="ed7b8947-dc0c-4346-a23f-f4ec85b2ab3a" name="Decision2" isLeaf="false">
-            <elementDefinition Id="1d0f36c6-33e6-4143-b5ba-9a2a59568d63" />
-            <flowNodeTargets>
-              <controlFlow Id="bcf82d0c-b717-4be1-8939-cf717389e264" isLeaf="false">
-                <opaqueActionMoniker Id="f4f54f66-ba77-440e-be67-9a7e3414a451" LastKnownName="User Views Feed" />
-                <elementDefinition Id="827644ae-005b-4b75-82de-8386b38a9581" />
-              </controlFlow>
-              <controlFlow Id="87fa904b-6989-4dab-a031-39faf2525e8b" isLeaf="false">
-                <opaqueActionMoniker Id="93cd0a4c-ee55-46be-a457-ad4cb935ddfe" LastKnownName="User Clicks on Comment" />
-                <elementDefinition Id="8403855e-4dfc-49fb-bdc8-6470f817fd3b" />
-              </controlFlow>
-              <controlFlow Id="db7556dc-c7c6-4dcb-92b1-f6af4e910935" isLeaf="false">
-                <opaqueActionMoniker Id="ae410c41-9fa9-4831-b4c3-55b3fdb34b7b" LastKnownName="User Up/Down Votes Rating" />
-                <elementDefinition Id="10b120ce-17d8-47a6-a6b5-3e6f25af02d8" />
-              </controlFlow>
-            </flowNodeTargets>
-          </decisionNode>
           <opaqueAction Id="ae410c41-9fa9-4831-b4c3-55b3fdb34b7b" name="User Up/Down Votes Rating" isLeaf="false">
             <elementDefinition Id="564cbdb7-6aa9-4510-8b4c-c06037508e21" />
             <flowNodeTargets>
-              <controlFlow Id="bdc10367-9de7-449c-b262-026ad46b6e6b" isLeaf="false">
-                <opaqueActionMoniker Id="1627f908-c71f-44ca-b310-e40538fef7dd" LastKnownName="User Clicks on Topic" />
-                <elementDefinition Id="44d38cfe-bb97-454c-a561-4e6385807469" />
+              <controlFlow Id="4d53f639-d337-470f-9095-e5b6a010658d" isLeaf="false">
+                <opaqueActionMoniker Id="1627f908-c71f-44ca-b310-e40538fef7dd" LastKnownName="User Views Topic" />
+                <elementDefinition Id="521b0da6-0d27-44f1-8c63-8b4086e5fa56" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -144,12 +123,78 @@
           <opaqueAction Id="df62ce1f-3990-449d-ad5b-ecb35037aafc" name="User clicks on Post" isLeaf="false">
             <elementDefinition Id="4328e5e0-534b-4c38-b328-453f0a71343f" />
             <flowNodeTargets>
-              <controlFlow Id="c82a9217-8043-4c3c-9008-e3d8dda161fd" isLeaf="false">
-                <opaqueActionMoniker Id="1627f908-c71f-44ca-b310-e40538fef7dd" LastKnownName="User Clicks on Topic" />
-                <elementDefinition Id="ef183453-cb83-4055-b532-ccba221448cc" />
+              <controlFlow Id="2b35b04a-3229-4a1b-b161-dbeeac0bf0b8" isLeaf="false">
+                <opaqueActionMoniker Id="1627f908-c71f-44ca-b310-e40538fef7dd" LastKnownName="User Views Topic" />
+                <elementDefinition Id="b63d64bb-99eb-4856-8d30-7696460b26e8" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <decisionNode Id="864f9003-4a92-4756-b632-9074be796686" name="Decision3" isLeaf="false">
+            <elementDefinition Id="baae6842-08a1-4b94-ae57-bdf55133af7e" />
+            <flowNodeTargets>
+              <controlFlow Id="0e1f6cb7-f50c-4d82-964f-bf0dbf3e78f4" isLeaf="false">
+                <opaqueActionMoniker Id="c807b923-b285-4a0b-9579-292475a884da" LastKnownName="User Exits Topic" />
+                <elementDefinition Id="9002801f-1962-42f5-aaa4-b31de2c930a4" />
+              </controlFlow>
+              <controlFlow Id="3ffaec44-f31d-4c0c-b60a-72f22a162d38" isLeaf="false">
+                <opaqueActionMoniker Id="457a572c-84fa-45c1-94f5-2fdbbb42e794" LastKnownName="User Interacts with Topic" />
+                <elementDefinition Id="2cda312c-3c48-4417-ab7c-bdfa590a402a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="0d05d476-6cc1-48f6-8aa6-3bd46679866b" name="User Interacts with Feed" isLeaf="false">
+            <elementDefinition Id="ad5d985c-e045-42ae-8d26-1a8e99f686ad" />
+            <flowNodeTargets>
+              <controlFlow Id="10dcf519-514f-43e6-8282-5b734408e742" isLeaf="false">
+                <decisionNodeMoniker Id="c7d8b016-a32b-416e-a89f-8fd4c831b873" LastKnownName="Decision4" />
+                <elementDefinition Id="1a38fb0d-a146-4935-bb90-333122ef200f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="c7d8b016-a32b-416e-a89f-8fd4c831b873" name="Decision4" isLeaf="false">
+            <elementDefinition Id="cad5b069-09d1-43a9-b2ec-a731bd398b98" />
+            <flowNodeTargets>
+              <controlFlow Id="164a7731-7b53-4dda-b6e7-e24f47b54da0" isLeaf="false">
+                <opaqueActionMoniker Id="1627f908-c71f-44ca-b310-e40538fef7dd" LastKnownName="User Views Topic" />
+                <elementDefinition Id="85e811f4-38e7-4cea-87fb-5020230cba63" />
+              </controlFlow>
+              <controlFlow Id="b5564a8b-7ca3-4a74-adc4-c164a7a8155f" isLeaf="false">
+                <opaqueActionMoniker Id="5ddce633-7053-46d6-9b45-e24cb3ff7ff9" LastKnownName="User Clicks New +" />
+                <elementDefinition Id="e747fc98-8c9a-44d5-bcfb-d2513afc200a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="c807b923-b285-4a0b-9579-292475a884da" name="User Exits Topic" isLeaf="false">
+            <elementDefinition Id="f08e9ce0-c038-4d32-a4a2-2ff3f5d3604b" />
+            <flowNodeTargets>
+              <controlFlow Id="60878189-faf2-44d1-a138-257d068a7bc6" isLeaf="false">
+                <opaqueActionMoniker Id="f4f54f66-ba77-440e-be67-9a7e3414a451" LastKnownName="User Views Feed" />
+                <elementDefinition Id="c2a7dfa9-c40a-423c-a0e3-a595fcde7cf7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="457a572c-84fa-45c1-94f5-2fdbbb42e794" name="User Interacts with Topic" isLeaf="false">
+            <elementDefinition Id="c9196cab-a852-497f-ada6-254db58b88c7" />
+            <flowNodeTargets>
+              <controlFlow Id="7bcb60d6-a408-4cd7-815c-daf9b26840f3" isLeaf="false">
+                <decisionNodeMoniker Id="99747d93-dd28-4924-97d0-1e9ca36cb6f9" LastKnownName="Decision2" />
+                <elementDefinition Id="34c13bb6-2956-4076-8fd7-5811d67bd2fd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="99747d93-dd28-4924-97d0-1e9ca36cb6f9" name="Decision2" isLeaf="false">
+            <elementDefinition Id="2a4b616b-0b05-4f40-9e41-e0bf842ca10b" />
+            <flowNodeTargets>
+              <controlFlow Id="65ca6274-f9c1-4199-b5b8-ba347c59e677" isLeaf="false">
+                <opaqueActionMoniker Id="93cd0a4c-ee55-46be-a457-ad4cb935ddfe" LastKnownName="User Clicks on Comment" />
+                <elementDefinition Id="b6477fde-a3f6-49d8-a0ed-b1a60edbb9c7" />
+              </controlFlow>
+              <controlFlow Id="bcf37c4a-39cc-4739-872b-4cfe745d19a7" isLeaf="false">
+                <opaqueActionMoniker Id="ae410c41-9fa9-4831-b4c3-55b3fdb34b7b" LastKnownName="User Up/Down Votes Rating" />
+                <elementDefinition Id="3bdf0242-e0d6-465a-821f-a243c6e19e29" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
